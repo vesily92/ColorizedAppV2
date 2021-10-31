@@ -31,7 +31,7 @@ struct ContentView: View {
 
             Spacer()
         }
-        .padding()
+        .onTapGesture { self.hideKeyboard() }
         .toolbar {
             ToolbarItem(placement: .keyboard) {
                 Button("Done") {
@@ -39,9 +39,7 @@ struct ContentView: View {
                 }
             }
         }
-        .onTapGesture {
-            self.hideKeyboard()
-        }
+        .padding()
     }
 }
 
