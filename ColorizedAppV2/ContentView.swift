@@ -15,31 +15,37 @@ struct ContentView: View {
     
     @FocusState private var isFocused: Bool
     
+    private let gradientColorTop = Color(red: 200 / 255, green: 110 / 255, blue: 200 / 255)
+    private let gradientColorBottom = Color(red: 240 / 255, green: 100 / 255, blue: 60 / 255)
+    
     var body: some View {
-        VStack(spacing: 20) {
-            ColorRectangleView(
-                color: Color(red: redValue / 255,
-                             green: greenValue / 255,
-                             blue: blueValue / 255)
-            )
-            ColorHStackView(color: .red, value: $redValue)
-                .focused($isFocused)
-            ColorHStackView(color: .green, value: $greenValue)
-                .focused($isFocused)
-            ColorHStackView(color: .blue, value: $blueValue)
-                .focused($isFocused)
-
-            Spacer()
-        }
-        .onTapGesture { hideKeyboard() }
-        .toolbar {
-            ToolbarItem(placement: .keyboard) {
-                Button("Done") {
-                    isFocused = false
+        ZStack {
+            
+            LinearGradient(colors: [gradientColorTop, gradientColorBottom], startPoint: .top, endPoint: .bottom)
+                .ignoresSafeArea()
+            
+            VStack(spacing: 50) {
+                
+                ColorFieldView(red: redValue, green: greenValue, blue: blueValue)
+                VStack(spacing: 20) {
+                    ColorTunerView(sliderValue: $redValue, color: .red)
+                    ColorTunerView(sliderValue: $greenValue, color: .green)
+                    ColorTunerView(sliderValue: $blueValue, color: .blue)
+                }
+                Spacer()
+            }
+            .focused($isFocused)
+            .onTapGesture { hideKeyboard() }
+            .toolbar {
+                ToolbarItemGroup(placement: .keyboard) {
+                    Spacer()
+                    Button("Done") {
+                        isFocused = false
+                    }
                 }
             }
-        }
         .padding()
+        }
     }
 }
 
@@ -51,6 +57,11 @@ struct ContentView_Previews: PreviewProvider {
 
 extension View {
     func hideKeyboard() {
-        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        UIApplication.shared.sendAction(
+            #selector(UIResponder.resignFirstResponder),
+            to: nil,
+            from: nil,
+            for: nil
+        )
     }
 }

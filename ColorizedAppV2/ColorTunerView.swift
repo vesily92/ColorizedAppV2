@@ -17,9 +17,7 @@ struct ColorTunerView: View {
     var body: some View {
         HStack {
             ValueTextView(sliderValue: sliderValue)
-            
             ValueSliderView(sliderValue: $sliderValue, textValue: $textValue, color: color)
-            
             ValueTextFieldView(sliderValue: $sliderValue, textValue: $textValue)
         }
         .onAppear {

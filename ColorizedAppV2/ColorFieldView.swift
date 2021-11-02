@@ -15,9 +15,14 @@ struct ColorFieldView: View {
     
     var body: some View {
         Color(red: red / 255, green: green / 255, blue: blue / 255)
-            .frame(height: 150)
+            .frame(height: 200)
             .cornerRadius(15)
-            .shadow(color: Color(red: red / 255, green: green / 255, blue: blue / 255), radius: 10, x: 2, y: 2)
+            .shadow(
+                color: Color(red: red / 255, green: green / 255, blue: blue / 255),
+                radius: 10,
+                x: 2,
+                y: 2
+            )
     }
 }
 
