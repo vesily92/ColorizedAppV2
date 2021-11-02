@@ -12,7 +12,7 @@
 		7B9AEDAE272D9DA2009111DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9AEDAD272D9DA2009111DF /* Assets.xcassets */; };
 		7B9AEDB1272D9DA2009111DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B9AEDB0272D9DA2009111DF /* Preview Assets.xcassets */; };
 		7B9AEDB8272DA263009111DF /* ColorHStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9AEDB7272DA263009111DF /* ColorHStackView.swift */; };
-		7B9AEDBA272DD991009111DF /* ColorRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9AEDB9272DD991009111DF /* ColorRectangleView.swift */; };
+		7B9AEDBA272DD991009111DF /* ColorFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9AEDB9272DD991009111DF /* ColorFieldView.swift */; };
 		7B9AEDBE27316B17009111DF /* SliderValueTFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9AEDBD27316B17009111DF /* SliderValueTFView.swift */; };
 		7B9AEDC227316BC2009111DF /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9AEDC127316BC2009111DF /* SliderView.swift */; };
 		7B9AEDC42731718B009111DF /* SliderValueTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9AEDC32731718B009111DF /* SliderValueTextView.swift */; };
@@ -25,7 +25,7 @@
 		7B9AEDAD272D9DA2009111DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B9AEDB0272D9DA2009111DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B9AEDB7272DA263009111DF /* ColorHStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorHStackView.swift; sourceTree = "<group>"; };
-		7B9AEDB9272DD991009111DF /* ColorRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorRectangleView.swift; sourceTree = "<group>"; };
+		7B9AEDB9272DD991009111DF /* ColorFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorFieldView.swift; sourceTree = "<group>"; };
 		7B9AEDBD27316B17009111DF /* SliderValueTFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderValueTFView.swift; sourceTree = "<group>"; };
 		7B9AEDC127316BC2009111DF /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 		7B9AEDC32731718B009111DF /* SliderValueTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderValueTextView.swift; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 			children = (
 				7B9AEDA9272D9D9F009111DF /* ColorizedAppV2App.swift */,
 				7B9AEDAB272D9D9F009111DF /* ContentView.swift */,
-				7B9AEDB9272DD991009111DF /* ColorRectangleView.swift */,
+				7B9AEDB9272DD991009111DF /* ColorFieldView.swift */,
 				7B9AEDBD27316B17009111DF /* SliderValueTFView.swift */,
 				7B9AEDC32731718B009111DF /* SliderValueTextView.swift */,
 				7B9AEDC127316BC2009111DF /* SliderView.swift */,
@@ -156,7 +156,7 @@
 				7B9AEDBE27316B17009111DF /* SliderValueTFView.swift in Sources */,
 				7B9AEDAC272D9D9F009111DF /* ContentView.swift in Sources */,
 				7B9AEDC42731718B009111DF /* SliderValueTextView.swift in Sources */,
-				7B9AEDBA272DD991009111DF /* ColorRectangleView.swift in Sources */,
+				7B9AEDBA272DD991009111DF /* ColorFieldView.swift in Sources */,
 				7B9AEDAA272D9D9F009111DF /* ColorizedAppV2App.swift in Sources */,
 				7B9AEDC227316BC2009111DF /* SliderView.swift in Sources */,
 			);
