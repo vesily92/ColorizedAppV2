@@ -28,7 +28,6 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            
             LinearGradient(
                 colors: [gradientColorTop, gradientColorBottom],
                 startPoint: .top, endPoint: .bottom
@@ -36,15 +35,17 @@ struct ContentView: View {
                 .ignoresSafeArea()
             
             VStack(spacing: 50) {
-                
                 ColorFieldView(red: redValue, green: greenValue, blue: blueValue)
+                
                 VStack(spacing: 20) {
                     ColorTunerView(sliderValue: $redValue, color: .red)
                     ColorTunerView(sliderValue: $greenValue, color: .green)
                     ColorTunerView(sliderValue: $blueValue, color: .blue)
                 }
+                
                 Spacer()
             }
+            .padding()
             .focused($isFocused)
             .onTapGesture { hideKeyboard() }
             .toolbar {
@@ -55,7 +56,6 @@ struct ContentView: View {
                     }
                 }
             }
-        .padding()
         }
     }
 }
