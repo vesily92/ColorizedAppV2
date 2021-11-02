@@ -15,13 +15,24 @@ struct ContentView: View {
     
     @FocusState private var isFocused: Bool
     
-    private let gradientColorTop = Color(red: 200 / 255, green: 110 / 255, blue: 200 / 255)
-    private let gradientColorBottom = Color(red: 240 / 255, green: 100 / 255, blue: 60 / 255)
+    private let gradientColorTop = Color(
+        red: 200 / 255,
+        green: 110 / 255,
+        blue: 200 / 255
+    )
+    private let gradientColorBottom = Color(
+        red: 240 / 255,
+        green: 100 / 255,
+        blue: 60 / 255
+    )
     
     var body: some View {
         ZStack {
             
-            LinearGradient(colors: [gradientColorTop, gradientColorBottom], startPoint: .top, endPoint: .bottom)
+            LinearGradient(
+                colors: [gradientColorTop, gradientColorBottom],
+                startPoint: .top, endPoint: .bottom
+            )
                 .ignoresSafeArea()
             
             VStack(spacing: 50) {
