@@ -29,6 +29,7 @@ struct ValueTextFieldView: View {
 }
 
 extension ValueTextFieldView {
+    
     private func checkInput() {
         if let input = Int(textValue), (0...255).contains(input) {
             sliderValue = Double(input)

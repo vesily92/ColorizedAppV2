@@ -12,7 +12,6 @@ struct ValueTextView: View {
     let sliderValue: Double
     
     var body: some View {
-        
         Text("\(lround(sliderValue))")
             .bold()
             .frame(width: 60, alignment: .leading)
